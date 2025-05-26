@@ -9,14 +9,12 @@
 	let selectType = "none";
     //paste the text under this line
 
-    
-
 
     
     //paste the text above this line   
     function updateCellSize(){
         let windowWidth = window.innerWidth;
-        let windowHeight = window.innerHeight;
+        let windowHeight = document.documentElement.scrollHeight;
         let currentCellsize = cellSize;
         let main = document.getElementById("main");
         main.style.width = String(windowWidth) + "px";
@@ -118,7 +116,7 @@
 <style>
     main {
         display: flex;
-        height: 100dvh;
+        height: 250dvh;
         width: 100dvw;
 		justify-content: center;
         background-position: center;
